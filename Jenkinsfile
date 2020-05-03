@@ -1,6 +1,5 @@
 node {
-  def myGradleContainer = docker.image('cdovidio/gradle-jdk8-node
-')
+  def myGradleContainer = docker.image('cdovidio/gradle-jdk8-node')
   myGradleContainer.pull()
   stage('prep') {
     checkout scm
